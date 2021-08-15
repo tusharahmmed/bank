@@ -1,0 +1,27 @@
+/**
+*   Author: Tushar Ahmmed Sakib
+*/
+
+/** ---------
+    Log In Page
+    ---------
+*/
+.bg-custom{
+    background-color: #F0F2F5;
+}
+.input-container input{
+    width: 100%;
+    border: 1px solid rgba(236, 236, 240, 0.76);
+    border-radius: 4px;
+    padding: 7px;
+}
+.input-container input:focus{
+    border: 1px solid #5B21B6;
+    border-radius: 2pt;
+    box-shadow: 0 0 0 1px #5a21b64d;
+    outline: none;
+    transition: .1s;
+}
+#submit,#deposit-submit,#withdraw-submit{
+    width: 100%;
+}

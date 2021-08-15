@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Western Bank of Chicago</title>
+    <!-- tailwind css -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="bg-custom">
+    <header>
+        <h1 class="text-5xl text-center mt-16 font-semibold"><span class=" text-purple-800">Western Bank</span><span class="text-transparent bg-clip-text bg-gradient-to-br from-purple-400 to-red-600"> Of Chicago</span></h1>
+    </header>
+
+    <main>
+        <section class="lg:w-3/12 md:w-2/4 sm:w-3/5 sm:shadow mx-auto mt-16 bg-white rounded-md">
+            <div class="p-4">
+                <div class="input-container mb-4">
+                    <input id="email" type="text" placeholder="Email address or phone number">
+                </div>
+                <div class="input-container mb-4">
+                    <input id="password" type="password" placeholder="Password">
+                </div>
+                <input class="bg-purple-800 text-white font-medium py-2 rounded" id="submit" type="submit" value="Log In">
+            </div>
+        </section>
+    </main>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+</body>
+</html>

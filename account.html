@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account - Dashboard</title>
+    <!-- tailwind css -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-custom">
+    <header>
+        <h1 class="text-5xl text-center mt-16 font-semibold"><span class=" text-purple-800">My Account</span><span class="text-transparent bg-clip-text bg-gradient-to-br from-purple-400 to-red-600"> Status</span></h1>
+    </header>
+    <main>
+        <!-- Balance and Transaction -->
+        <section class="mt-9 text-white">
+            <div class="grid grid-cols-3 gap-4 md:w-3/4 mx-auto">
+                <div class="bg-gradient-to-r from-purple-500 to-blue-400 p-7 rounded-md">
+                    <h3 class="font-semibold sm:text-3xl">Deposite</h3>
+                    <h2 class="font-bold sm:text-4xl">$<span id="totalDeposite">00</span></h2>
+                </div>
+                <div class="bg-gradient-to-r from-purple-500 to-blue-400 p-7 rounded-md">
+                    <h3 class="font-semibold sm:text-3xl">Widthdraw</h3>
+                    <h2 class="font-bold sm:text-4xl">$<span id="totalwithdraw">00</h2>
+                </div>
+                <div class="bg-gradient-to-r from-purple-600 to-red-500 p-7 rounded-md">
+                    <h3 class="font-semibold sm:text-3xl">Balance</h3>
+                    <h2 class="font-bold sm:text-4xl">$<span id="totalBalance">1000</h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deposit and Withdraw -->
+        <section class="mt-7 text-white">
+            <div class="grid grid-cols-2 gap-5 sm:w-1/4 mx-auto">
+                <div id="deposit-item" class="bg-gradient-to-r from-green-500 to-blue-500  hover:from-blue-400 to-purple-500 p-2 rounded-md text-center">
+                    <h3>Deposit</h3>
+                </div>
+                <div id="withdraw-item" class="bg-gradient-to-r from-green-500 to-blue-500  hover:from-blue-400 to-purple-500 p-2 rounded-md text-center">
+                    <h3>Withdraw</h3>
+                </div>
+            </div>
+            <!-- Inner Form -->
+            <div id="inner-form"></div>
+        </section>
+    </main>
+    <!-- custom js -->
+    <script src="js/account.js"></script>
+</body>
+</html>
+
